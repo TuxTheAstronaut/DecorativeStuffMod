@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ds",
+  "version": "${version}",
+
+  "name": "Decorative Sh*t",
+  "description": "More decorative shi* I mean stuff for your world",
+  "authors": [
+    "TuxTheAstronaut"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/ds/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.tuxtheastronaut.ds.DS"
+    ]
+  },
+  "mixins": [
+    "ds.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

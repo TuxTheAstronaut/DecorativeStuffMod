@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ds:block/globe", "y": 90 },
+    "facing=east": { "model": "ds:block/globe", "y": 180 },
+    "facing=south": { "model": "ds:block/globe", "y": 270 },
+    "facing=west": { "model": "ds:block/globe", "y": 0 }
+  }
+}
