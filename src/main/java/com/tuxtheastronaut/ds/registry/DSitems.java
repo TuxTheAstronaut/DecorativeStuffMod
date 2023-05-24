@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -20,6 +19,6 @@ public class DSitems {
 
     // registers block items
     public static void registerBlockItem(String name, Block block) {
-        Item item = registerItem(name, new BlockItem(block, new FabricItemSettings().group(ItemGroup.DECORATIONS)));
+        Item item = registerItem(name, new BlockItem(block, new FabricItemSettings().group(DSitemGroup.DS_GROUP)));
     }
 }
