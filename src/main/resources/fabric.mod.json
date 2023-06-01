@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "com.tuxtheastronaut.ds.DS"
+    ],
+    "client": [
+      "com.tuxtheastronaut.ds.DSClient"
     ]
   },
   "mixins": [

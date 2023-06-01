@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "ds:block/desk_lamp" },
+    "facing=east": { "model": "ds:block/desk_lamp", "y": 90 },
+    "facing=south": { "model": "ds:block/desk_lamp", "y": 180 },
+    "facing=west": { "model": "ds:block/desk_lamp", "y": 270 }
+  }
+}
