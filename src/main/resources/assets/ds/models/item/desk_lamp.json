@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "ds:blocks/desk_lamp",
-    "particle": "ds:blocks/desk_lamp"
+    "0": "ds:block/desk_lamp",
+    "particle": "ds:block/desk_lamp"
   },
   "elements": [
     {

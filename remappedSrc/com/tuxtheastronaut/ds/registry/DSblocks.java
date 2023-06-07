@@ -8,20 +8,17 @@ import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.Registries;
 
 public class DSblocks {
     // globe decoration
-    public static final Block Globe = registerBlock("globe", new globe(FabricBlockSettings.create()
-            .mapColor(MapColor.GOLD)
+    public static final Block Globe = registerBlock("globe", new globe(FabricBlockSettings.of(Material.METAL, MapColor.GOLD)
             .sounds(BlockSoundGroup.COPPER)
             .strength(0.1f,0.1f)
             .hardness(0.1f)
     ));
 
     // desk lamp decoration
-    public static Block DeskLamp = registerBlock("desk_lamp", new desk_lamp(FabricBlockSettings.create()
-            .mapColor(MapColor.BROWN)
+    public static Block DeskLamp = registerBlock("desk_lamp", new desk_lamp(FabricBlockSettings.of(Material.METAL, MapColor.BROWN)
             .sounds(BlockSoundGroup.LANTERN)
             .strength(0.2f,0.2f)
             .hardness(0.2f)
@@ -34,7 +31,7 @@ public class DSblocks {
     // registers the block
     public static Block registerBlock(String name, Block block) {
         DSitems.registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, new Identifier(DS.MOD_ID, name), block);
+        return Registry.register(Registry.BLOCK, new Identifier(DS.MOD_ID, name), block);
     }
 
 }

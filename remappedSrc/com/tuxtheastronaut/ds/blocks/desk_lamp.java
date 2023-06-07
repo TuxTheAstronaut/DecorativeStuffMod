@@ -100,7 +100,7 @@ public class desk_lamp extends Block {
     @Nullable
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
+        return this.getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite());
     }
 
     @Override

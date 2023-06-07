@@ -7,7 +7,6 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.Registries;
 
 public class DSitems {
     // logs item registration
@@ -15,11 +14,12 @@ public class DSitems {
 
     // registers inventory items
     public static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(DS.MOD_ID, name), item);
+        //return Registry.register(Registry.Item, new Identifier(DS.MOD_ID, name), item);
+        return Registry.register(Void)
     }
 
     // registers block items
     public static void registerBlockItem(String name, Block block) {
-        Item item = registerItem(name, new BlockItem(block, new FabricItemSettings()));
+        Item item = registerItem(name, new BlockItem(block, new FabricItemSettings().group(DSitemGroup.DS_GROUP)));
     }
 }

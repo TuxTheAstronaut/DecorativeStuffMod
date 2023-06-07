@@ -1,7 +1,6 @@
 package com.tuxtheastronaut.ds;
 
 import com.tuxtheastronaut.ds.registry.DSblocks;
-import com.tuxtheastronaut.ds.registry.DSitemGroup;
 import com.tuxtheastronaut.ds.registry.DSitems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -15,6 +14,5 @@ public class DS implements ModInitializer {
 	public void onInitialize() {
 		DSblocks.registerBlocks();
 		DSitems.registerItems();
-		DSitemGroup.registerGroup();
 	}
 }
