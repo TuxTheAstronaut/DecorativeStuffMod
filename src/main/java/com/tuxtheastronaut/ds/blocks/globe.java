@@ -25,10 +25,7 @@ public class globe extends Block {
     }
 
     private static final VoxelShape SHAPE = Stream.of(
-            Block.createCuboidShape(4, 4, 4, 12, 12, 12),
-            Block.createCuboidShape(4, 0, 4, 12, 1, 12),
-            Block.createCuboidShape(5, 1, 5, 11, 2, 11),
-            Block.createCuboidShape(7, 2, 7, 9, 4, 9)
+            Block.createCuboidShape(2, 0, 2, 14, 14, 14)
     ).reduce((v1, v2) -> VoxelShapes.combineAndSimplify(v1, v2, BooleanBiFunction.OR)).get();
 
     @Override
